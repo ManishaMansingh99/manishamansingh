@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+
+  <section class="landingpage" id="home">
+
+    <div class="main">
+      <h2>MANISHA MANSINGH</h2>
+      <h1>SOFTWARE DEVELOPER</h1>
+    </div>
+
+    <div class="screen"></div>
+
+    <canvas id="canvas3d_1"></canvas>
+    <script type="module">
+      import { Application } from './final/runtime.js';
+      const canvas1 = document.getElementById('canvas3d_1');
+      const app1 = new Application(canvas1);
+      app1.load('./final/scene.splinecode');
+    </script>
+
+  </section>
+
+  <div class="overflowing">
+    <!-- <header>
+       <h2 class="pane">Nav</h2>
+       <nav class="navigation">
+         <a onclick="window.location.href='#home'">Home</a>
+         <a onclick="window.location.href='#profile'">About</a>
+         <a onclick="window.location.href='#skills'">Skills</a>
+         <a onclick="window.location.href='#projects'">Projects</a>
+         <a onclick="window.location.href='#contact'">Contact</a>
+       </nav>
+     </header> -->
+
+    <section id="profile">
+      <div class="flex-container">
+
+        <div class="flex-child image">
+          <canvas id="canvas3d"></canvas>
+          <script type="module">
+            import { Application } from './phone/runtime.js';
+            const canvas = document.getElementById('canvas3d');
+            const app = new Application(canvas);
+            app.load('./phone/scene.splinecode');
+          </script>
+        </div>
+
+        <div class="flex-child data">
+          <h1 class="typewriter-text">Heading</h1>
+          <h2 class="card1"><p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo temporibus neque voluptas perspiciatis. Illum, sequi hic iste ex tempora iusto provident, quibusdam expedita saepe consequatur blanditiisti.</p></h2>
+          <div class="card2">
+            <p><br>I’m Hamish, currently I live in Sydney working as a senior product designer at Qwilr. My projects include UX design, UI animations, and icon illustration. Being comfortable with code allows me to rapidly prototype and validate experiences. If you’re interested in the tools and software I use check out my uses page.<br>
+              <br>
+              In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and make mods. I’m always down for hearing about new projects, so feel free to drop me a line.</p>
+        </div>
+        </div>
+          
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="skills-container">
+        <h1>Skills</h1>
+        <ul class="soc">
+            <a class="java logo-1" title="java">
+              <div class="ir">
+                <img src="images/icons8-java.svg">
+              </div>
+            </a>
+          
+          <a class="logo-2 spring" title="spring boot">
+              <div class="ir">
+                  <img src="images/icons8-spring-boot-480 (1).png">
+              </div>
+          </a>
+          <a class="logo-3 sql" title="sql">
+              <div class="ir">
+                  <img src="images/icons8-sql-100.png">
+              </div>
+          </a>
+          <a class="logo-4 docker" title="docker">
+              <div class="ir">
+                  <img src="images/icons8-docker-500.png">
+              </div>
+          </a>
+          <a class="logo-5 python" title="python">
+              <div class="ir">
+                  <img src="images/icons8-python-500.png">
+              </div>
+          </a>
+          <a class="logo-6 html" title="html">
+              <div class="ir">
+                  <img src="images/icons8-html-100.png">
+              </div>
+          </a>
+      </ul>
+      </div>
+    </section>
+
+    <section class="sec" id="projects">
+      <h2>Projects</h2>  
+      <div class="blog-card">
+          <div class="meta">
+            <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+            <ul class="details">
+              <li class="author"><a href="#">Anicca Data</a></li>
+              <li class="date">Mar. 01, 2022</li>
+              <li class="tags">
+                <ul>
+                  <li><a href="#">Java</a></li>
+                  <li><a href="#">Spring Boot</a></li>
+                  <li><a href="#">Docker</a></li>
+                  <li><a href="#">Junit</a></li>
+                  <li><a href="#">Kafka</a></li>
+                  <li><a href="#">PostgreSQL</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>MCD RFM Project</h1>
+            <h2>Digital Transformstion</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+          </div>
+        </div>
+        <div class="blog-card alt">
+          <div class="meta">
+            <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
+            <ul class="details">
+              <li class="author"><a href="#">Anicca Data</a></li>
+              <li class="date">Feb. 15 2023</li>
+              <li class="tags">
+                <ul>
+                  <li><a href="#">Python</a></li>
+                  <li><a href="#">Airflow</a></li>
+                  <li><a href="#">SQL</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>Inventory planner</h1>
+            <h2>Java is not the same as JavaScript</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+          </div>
+        </div>
+  </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h1>Contact</h1>
+        <ul class="soc">
+            <a class="logo-1 inkedin" title="linkedin">
+              <div class="ir">
+                <img src="images/icons8-linked-in-500.png">
+              </div>
+            </a>
+          
+          <a class="logo-7 git" title="git">
+              <div class="ir">
+                  <img src="images/icons8-github-480 (1).png">
+              </div>
+          </a>
+          <a class="logo-3 mail" title="mail">
+              <div class="ir">
+                  <img src="images/icons8-mail-100.png">
+              </div>
+          </a>
+      </ul>
+      </div>
+    </section>
+  </div> 
+
+  <!-- <script>
+    var loader = document.getElementById("loader-wrapper");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+  </script> -->
+  <script>
+    $(window).on("load", function() {
+      console.log("Window loaded!");
+      setTimeout(function() {
+        $("#preloader").fadeOut("slow");
+      }, 2000);
+    });
+  </script>
+  
+</body>
+
+
+</html>
+
+
