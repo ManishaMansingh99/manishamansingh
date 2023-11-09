@@ -5,22 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Manisha Mansingh</title>
+  <link rel="icon" href="images/Mlogo3.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="style.js"></script>
 </head>
 
 <body>
+
   <div id="preloader">
     <div class="loader"></div>
   </div>
 
-
   <section class="landingpage" id="home">
 
     <div class="main">
-      <h2>MANISHA MANSINGH</h2>
-      <h1>SOFTWARE DEVELOPER</h1>
+      <h2 class="home-title">
+        <span>MANISHA MANSINGH</span>
+      </h2>
+      
+      <div class="content__container">
+        <ul class="content__container__list">
+          <li class="content__container__list__item">DEVELOPER</li>
+          <li class="content__container__list__item">DESIGNER</li>
+          <!-- <li class="content__container__list__item">users !</li>
+          <li class="content__container__list__item">everybody !</li> -->
+        </ul>
+      </div>
     </div>
 
     <div class="screen"></div>
@@ -35,19 +47,20 @@
 
   </section>
 
-  <div class="overflowing">
-    <!-- <header>
-       <h2 class="pane">Nav</h2>
-       <nav class="navigation">
-         <a onclick="window.location.href='#home'">Home</a>
-         <a onclick="window.location.href='#profile'">About</a>
-         <a onclick="window.location.href='#skills'">Skills</a>
-         <a onclick="window.location.href='#projects'">Projects</a>
-         <a onclick="window.location.href='#contact'">Contact</a>
-       </nav>
-     </header> -->
-
-    <section id="profile">
+  <nav id="navbar">
+    <a class="brand">
+      <img src="images/Mlogo4.png">
+    </a>
+    <ul>
+      <li><a onclick="window.location.href='#home'">Home</a></li>
+      <li><a onclick="window.location.href='#profile'">About</a></li>
+      <li><a onclick="window.location.href='#skills'">Skills</a></li>
+      <li><a onclick="window.location.href='#project'">Projects</a></li>
+      <li><a onclick="window.location.href='#contact'">Contact</a></li>
+    </ul>
+  </nav>
+ 
+    <section class="fade-in" id="profile">
       <div class="flex-container">
 
         <div class="flex-child image">
@@ -61,7 +74,7 @@
         </div>
 
         <div class="flex-child data">
-          <h1 class="typewriter-text">Heading</h1>
+          <h1 class="fade-in">Heading</h1>
           <h2 class="card1"><p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo temporibus neque voluptas perspiciatis. Illum, sequi hic iste ex tempora iusto provident, quibusdam expedita saepe consequatur blanditiisti.</p></h2>
           <div class="card2">
             <p><br>I’m Hamish, currently I live in Sydney working as a senior product designer at Qwilr. My projects include UX design, UI animations, and icon illustration. Being comfortable with code allows me to rapidly prototype and validate experiences. If you’re interested in the tools and software I use check out my uses page.<br>
@@ -73,9 +86,9 @@
       </div>
     </section>
 
-    <section id="skills">
+    <section class="fade-in" id="skills">
       <div class="skills-container">
-        <h1>Skills</h1>
+        <h1 class="fade-in">Skills</h1>
         <ul class="soc">
             <a class="java logo-1" title="java">
               <div class="ir">
@@ -112,58 +125,36 @@
       </div>
     </section>
 
-    <section class="sec" id="projects">
-      <h2>Projects</h2>  
-      <div class="blog-card">
-          <div class="meta">
-            <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
-            <ul class="details">
-              <li class="author"><a href="#">Anicca Data</a></li>
-              <li class="date">Mar. 01, 2022</li>
-              <li class="tags">
-                <ul>
-                  <li><a href="#">Java</a></li>
-                  <li><a href="#">Spring Boot</a></li>
-                  <li><a href="#">Docker</a></li>
-                  <li><a href="#">Junit</a></li>
-                  <li><a href="#">Kafka</a></li>
-                  <li><a href="#">PostgreSQL</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="description">
-            <h1>MCD RFM Project</h1>
-            <h2>Digital Transformstion</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+    <section class="fade-in" id="project">
+      <h1 class="fade-in">Projects</h1>
+      <link rel ="stylesheet" href="css/project.css">
+      <div class="project-card-sm">
+        <div class="card-border-gradient"></div>
+        <div class="card-container">
+          <img src="images/mcd.jpg" alt="">
+          <div class="wrapper">
+            <h2>RFM MCD</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam </p>
+            <li>Java SpringBoot Docker PostgreSQL Swagger</li>
           </div>
         </div>
-        <div class="blog-card alt">
-          <div class="meta">
-            <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
-            <ul class="details">
-              <li class="author"><a href="#">Anicca Data</a></li>
-              <li class="date">Feb. 15 2023</li>
-              <li class="tags">
-                <ul>
-                  <li><a href="#">Python</a></li>
-                  <li><a href="#">Airflow</a></li>
-                  <li><a href="#">SQL</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="description">
-            <h1>Inventory planner</h1>
-            <h2>Java is not the same as JavaScript</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+      </div>
+      <div class="project-card-sm">
+        <div class="card-border-gradient"></div>
+        <div class="card-container">
+          <img src="images/dmf.jpg" alt="">
+          <div class="wrapper">
+            <h2>Inventory Planner</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam </p>
+            <li>Java SpringBoot Docker PostgreSQL Swagger</li>
           </div>
         </div>
-  </section>
+      </div>
+    </section>
 
-    <section id="contact">
+    <section class="fade-in" id="contact">
       <div class="contact-container">
-        <h1>Contact</h1>
+        <h1 class="fade-in">Contact</h1>
         <ul class="soc">
             <a class="logo-1 inkedin" title="linkedin">
               <div class="ir">
@@ -184,14 +175,24 @@
       </ul>
       </div>
     </section>
+
+    <script type="text/javascript">
+      var lastScrollTop = 0;
+      var navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function() { // Use "scroll" (lowercase "s")
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-50px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
+
+
   </div> 
 
-  <!-- <script>
-    var loader = document.getElementById("loader-wrapper");
-    window.addEventListener("load", function () {
-      loader.style.display = "none";
-    });
-  </script> -->
   <script>
     $(window).on("load", function() {
       console.log("Window loaded!");
@@ -202,6 +203,10 @@
   </script>
   
 </body>
+
+<footer>
+  <h1>thank you for visiting</h1>
+</footer>
 
 
 </html>
