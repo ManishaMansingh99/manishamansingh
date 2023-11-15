@@ -2,213 +2,422 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manisha Mansingh</title>
-  <link rel="icon" href="images/Mlogo3.png" type="image/png">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="style.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manisha Mansingh</title>
+    <link rel="icon" href="images/Mlogo3.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/style.js"></script>
+</head>  
 
 <body>
-
-  <div id="preloader">
-    <div class="loader"></div>
-  </div>
-
-  <section class="landingpage" id="home">
-
-    <div class="main">
-      <h2 class="home-title">
-        <span>MANISHA MANSINGH</span>
-      </h2>
-      
-      <div class="content__container">
-        <ul class="content__container__list">
-          <li class="content__container__list__item">DEVELOPER</li>
-          <li class="content__container__list__item">DESIGNER</li>
-          <!-- <li class="content__container__list__item">users !</li>
-          <li class="content__container__list__item">everybody !</li> -->
-        </ul>
-      </div>
+<!-- preloader -->
+    <div id="preloader">
+        <link rel="stylesheet" href="css/loader.css">
+        <svg class="gegga">
+            <defs>
+                <filter id="gegga">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                <feColorMatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10"
+                    result="inreGegga"
+                />
+                <feComposite in="SourceGraphic" in2="inreGegga" operator="atop" />
+                </filter>
+            </defs>
+        </svg>
+        <svg class="snurra" width="200" height="200" viewBox="0 0 200 200">
+            <defs>
+                <linearGradient id="linjärGradient">
+                <stop class="stopp1" offset="0" />
+                <stop class="stopp2" offset="1" />
+                </linearGradient>
+                <linearGradient
+                y2="160"
+                x2="160"
+                y1="40"
+                x1="40"
+                gradientUnits="userSpaceOnUse"
+                id="gradient"
+                xlink:href="#linjärGradient"
+                />
+            </defs>
+            <path
+                class="halvan"
+                d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"
+            />
+            <circle class="strecken" cx="100" cy="100" r="64" />
+        </svg>
+        <svg class="skugga" width="200" height="200" viewBox="0 0 200 200">
+            <path
+                class="halvan"
+                d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"
+            />
+            <circle class="strecken" cx="100" cy="100" r="64" />
+        </svg>
     </div>
 
-    <div class="screen"></div>
+    <!-- navigation bar -->
+    <nav id="navbar">
+        <link rel="stylesheet" href="css/nav.css">
+        <a class="brand">
+            <img src="images/Mlogo4.png">
+        </a>
+        <ul class="navigation">
+            <li><a onclick="window.location.href='#home'">Home</a></li>
+            <li><a onclick="window.location.href='#profile'">About</a></li>
+            <li><a onclick="window.location.href='#work'">Experience</a></li>
+            <li><a onclick="window.location.href='#skills'">Skills</a></li>
+            <li><a onclick="window.location.href='#project'">Projects</a></li>
+            <li><a onclick="window.location.href='#contact'">Contact</a></li>
+            <span class="toggleMenu"></span>
+        </ul>
 
-    <canvas id="canvas3d_1"></canvas>
-    <script type="module">
-      import { Application } from './final/runtime.js';
-      const canvas1 = document.getElementById('canvas3d_1');
-      const app1 = new Application(canvas1);
-      app1.load('./final/scene.splinecode');
+        <a href="images/Manisha_Mansingh_Resume.pdf" class="download-button" download="Manisha_Mansingh_Resume.pdf">Download Resume</a>
+
+    </nav>
+
+    <section class="landingpage" id="home">
+        <link rel="stylesheet" href="css/landingpage.css">
+        <div class="main">
+            <h2>MANISHA MANSINGH</h2>
+          
+            <div id="container">
+                <span id="text1"></span>
+                <span id="text2"></span>
+            </div>
+        
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                                0 1 0 0 0
+                                                0 0 1 0 0
+                                                0 0 0 255 -140" />
+                    </filter>
+                </defs>
+            </svg>
+            <!-- partial -->
+            <script  src="./js/textanimation.js"></script>
+        </div>
+    
+        <div class="screen"></div>
+    
+        <canvas id="canvas3d_1"></canvas>
+        <script type="module">
+          import { Application } from './spline/final/runtime.js';
+          const canvas1 = document.getElementById('canvas3d_1');
+          const app1 = new Application(canvas1);
+          app1.load('./spline/final/scene.splinecode');
+        </script>
+    
+    </section>
+
+    <div class="overflow">
+        <!-- profile -->
+        <section class="fade-in" id="profile">
+            <link rel="stylesheet" href="css/profile.css">
+            <div class="flex-container">
+
+                <div class="flex-child image">
+                  <!-- <canvas id="canvas3d"></canvas>
+                  <script type="module">
+                    import { Application } from './spline/phone/runtime.js';
+                    const canvas = document.getElementById('canvas3d');
+                    const app = new Application(canvas);
+                    app.load('./spline/phone/scene.splinecode');
+                  </script> -->
+                </div>
+          
+                <div class="flex-child data">
+                    <div class="left-section">
+
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit...<br><br></h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae culpa eligendi cupiditate animi provident dolores facilis suscipit excepturi mollitia sequi voluptate illo, eveniet sit exercitationem doloremque veritatis quae? Repellat?</h3>
+                    </div>
+                    <div class="profile-contain">
+                        <h1>Heading</h1>
+                    </div>
+
+                </div>
+                
+                  
+              </div>
+        </section>
+
+        <section class="fade-in" id="work">
+            <link rel="stylesheet" href="css/work.css">
+            <div class="work-container">
+            <h1>Work Experience</h1>
+            <div id="cd-timeline" class="cd-container">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                        <img src="images/briefcase-svgrepo-com.svg" alt="Picture">
+                    </div>
+        
+                    <div class="cd-timeline-content">
+                        <h2>Anicca Data</h2>
+                        <h3>Internship</h3>
+                        <p>rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        <span class="cd-date">Jan 3,2022</span>
+                    </div> 
+                </div> 
+        
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-movie">
+                        <img src="images/document-svgrepo-com.svg" alt="Movie">
+                    </div> 
+        
+                    <div class="cd-timeline-content">
+                        <h2>Backend dev</h2>
+                        <h3>Anicca data</h3>
+                        <p>rum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                        <span class="cd-date">march 1,2022</span>
+                    </div> 
+                </div> 
+        
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                        <img src="images/monitor-svgrepo-com.svg" alt="Picture">
+                    </div> 
+        
+                    <div class="cd-timeline-content">
+                        <h2>Backend dev</h2>
+                        <h3>Anicca</h3>
+                        <p>ossimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+                        <span class="cd-date">feb 1,2023</span>
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+           
+        </section>
+
+        <section class="fade-in" id="project">
+            <h1 class="fade-in">Projects</h1>
+            <link rel ="stylesheet" href="css/project.css">
+            <div class="project-card-sm">
+                <div class="card-border-gradient"></div>
+                <div class="card-container">
+                <img src="images/mcd.jpg" alt="">
+                <div class="wrapper">
+                    <h2>RFM MCD</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam </p>
+                    <li>Java SpringBoot Docker PostgreSQL Swagger</li>
+                </div>
+                </div>
+            </div>
+            <div class="project-card-sm">
+                <div class="card-border-gradient"></div>
+                <div class="card-container">
+                <img src="images/dmf.jpg" alt="">
+                <div class="wrapper">
+                    <h2>Inventory Planner</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam </p>
+                    <li>Java SpringBoot Docker PostgreSQL Swagger</li>
+                </div>
+                </div>
+            </div>
+            </section>
+              
+        <section class="fade-in" id="skills">
+            <h1>Skills</h1>
+            <link rel="stylesheet" href="css/skills.css">
+            <div class="skills-container">
+                <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number" title="java">
+                            <img src="images/icons8-java-500.png">
+                        </div>
+                    </div>
+                </div>
+        
+                <svg class="icon1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#ee66aa"/>
+                            <stop offset="100%" stop-color="#a39cf4"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
+                </svg>
+                </div>
+        
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number" title="SpringBoot">
+                                <img src="images/icons8-spring-boot-480 (1).png" style="background-color: aliceblue; border-radius: 50%;">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <svg class="icon2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#DA22FF"/>
+                                <stop offset="100%" stop-color="#9733EE"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="44" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number" title="sql">
+                                <img src="images/icons8-sql-100.png">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <svg class="icon3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#DA22FF"/>
+                                <stop offset="100%" stop-color="#9733EE"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
+                    </svg>
+                </div>
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number" title="python">
+                                <img src="images/icons8-python-500.png">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <svg class="icon4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#DA22FF"/>
+                                <stop offset="100%" stop-color="#9733EE"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
+                    </svg>
+                </div>
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number" title="html">
+                                <img src="images/icons8-html-100.png">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <svg class="icon5" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#DA22FF"/>
+                                <stop offset="100%" stop-color="#9733EE"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
+                    </svg>
+                </div>
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number" title="docker">
+                                <img src="images/icons8-docker-500.png">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <svg class="icon6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#DA22FF"/>
+                                <stop offset="100%" stop-color="#9733EE"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
+                    </svg>
+                </div>
+            </div>
+
+        </section>
+
+
+          <section class="fade-in" id="contact">
+            <div class="contact-container">
+              <h1 class="fade-in">Contact</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam delectus, amet illo dicta corrupti consequatur doloribus deleniti quam earum numquam mollitia ad praesentium rem, nihil commodi, neque odit quod eveniet.</p>
+              <ul class="soc">
+                  <a class="logo-1 inkedin" title="linkedin">
+                    <div class="ir">
+                      <img src="images/icons8-linked-in-500.png">
+                    </div>
+                  </a>
+                
+                <a class="logo-7 git" title="git">
+                    <div class="ir">
+                        <img src="images/icons8-github-480 (1).png">
+                    </div>
+                </a>
+                <a class="logo-3 mail" title="mail">
+                    <div class="ir">
+                        <img src="images/icons8-mail-100.png">
+                    </div>
+                </a>
+            </ul>
+            </div>
+          </section>
+    </div>
+    <script src="js/work.js"></script>
+
+    <script src="js/skills.js"></script>
+
+    <!-- nav toggle script -->
+    <script>
+        let toggleMenu = document.querySelector('.toggleMenu');
+        let navigation = document.querySelector('.navigation');
+        toggleMenu.onclick=function(){
+            navigation.classList.toggle('active');
+        }
     </script>
-
-  </section>
-
-  <nav id="navbar">
-    <a class="brand">
-      <img src="images/Mlogo4.png">
-    </a>
-    <ul>
-      <li><a onclick="window.location.href='#home'">Home</a></li>
-      <li><a onclick="window.location.href='#profile'">About</a></li>
-      <li><a onclick="window.location.href='#skills'">Skills</a></li>
-      <li><a onclick="window.location.href='#project'">Projects</a></li>
-      <li><a onclick="window.location.href='#contact'">Contact</a></li>
-    </ul>
-  </nav>
- 
-    <section class="fade-in" id="profile">
-      <div class="flex-container">
-
-        <div class="flex-child image">
-          <canvas id="canvas3d"></canvas>
-          <script type="module">
-            import { Application } from './phone/runtime.js';
-            const canvas = document.getElementById('canvas3d');
-            const app = new Application(canvas);
-            app.load('./phone/scene.splinecode');
-          </script>
-        </div>
-
-        <div class="flex-child data">
-          <h1 class="fade-in">Heading</h1>
-          <h2 class="card1"><p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo temporibus neque voluptas perspiciatis. Illum, sequi hic iste ex tempora iusto provident, quibusdam expedita saepe consequatur blanditiisti.</p></h2>
-          <div class="card2">
-            <p><br>I’m Hamish, currently I live in Sydney working as a senior product designer at Qwilr. My projects include UX design, UI animations, and icon illustration. Being comfortable with code allows me to rapidly prototype and validate experiences. If you’re interested in the tools and software I use check out my uses page.<br>
-              <br>
-              In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and make mods. I’m always down for hearing about new projects, so feel free to drop me a line.</p>
-        </div>
-        </div>
-          
-      </div>
-    </section>
-
-    <section class="fade-in" id="skills">
-      <div class="skills-container">
-        <h1 class="fade-in">Skills</h1>
-        <ul class="soc">
-            <a class="java logo-1" title="java">
-              <div class="ir">
-                <img src="images/icons8-java.svg">
-              </div>
-            </a>
-          
-          <a class="logo-2 spring" title="spring boot">
-              <div class="ir">
-                  <img src="images/icons8-spring-boot-480 (1).png">
-              </div>
-          </a>
-          <a class="logo-3 sql" title="sql">
-              <div class="ir">
-                  <img src="images/icons8-sql-100.png">
-              </div>
-          </a>
-          <a class="logo-4 docker" title="docker">
-              <div class="ir">
-                  <img src="images/icons8-docker-500.png">
-              </div>
-          </a>
-          <a class="logo-5 python" title="python">
-              <div class="ir">
-                  <img src="images/icons8-python-500.png">
-              </div>
-          </a>
-          <a class="logo-6 html" title="html">
-              <div class="ir">
-                  <img src="images/icons8-html-100.png">
-              </div>
-          </a>
-      </ul>
-      </div>
-    </section>
-
-    <section class="fade-in" id="project">
-      <h1 class="fade-in">Projects</h1>
-      <link rel ="stylesheet" href="css/project.css">
-      <div class="project-card-sm">
-        <div class="card-border-gradient"></div>
-        <div class="card-container">
-          <img src="images/mcd.jpg" alt="">
-          <div class="wrapper">
-            <h2>RFM MCD</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam </p>
-            <li>Java SpringBoot Docker PostgreSQL Swagger</li>
-          </div>
-        </div>
-      </div>
-      <div class="project-card-sm">
-        <div class="card-border-gradient"></div>
-        <div class="card-container">
-          <img src="images/dmf.jpg" alt="">
-          <div class="wrapper">
-            <h2>Inventory Planner</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam </p>
-            <li>Java SpringBoot Docker PostgreSQL Swagger</li>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="fade-in" id="contact">
-      <div class="contact-container">
-        <h1 class="fade-in">Contact</h1>
-        <ul class="soc">
-            <a class="logo-1 inkedin" title="linkedin">
-              <div class="ir">
-                <img src="images/icons8-linked-in-500.png">
-              </div>
-            </a>
-          
-          <a class="logo-7 git" title="git">
-              <div class="ir">
-                  <img src="images/icons8-github-480 (1).png">
-              </div>
-          </a>
-          <a class="logo-3 mail" title="mail">
-              <div class="ir">
-                  <img src="images/icons8-mail-100.png">
-              </div>
-          </a>
-      </ul>
-      </div>
-    </section>
-
+    <!-- nav dissapear script -->
     <script type="text/javascript">
-      var lastScrollTop = 0;
-      var navbar = document.getElementById("navbar");
-      window.addEventListener("scroll", function() { // Use "scroll" (lowercase "s")
+        var lastScrollTop = 0;
+        var navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function() { // Use "scroll" (lowercase "s")
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         if (scrollTop > lastScrollTop) {
-          navbar.style.top = "-50px";
+            navbar.style.top = "-70px";
         } else {
-          navbar.style.top = "0";
+            navbar.style.top = "0";
         }
         lastScrollTop = scrollTop;
-      });
+        });
     </script>
 
-
-  </div> 
-
-  <script>
+    
+<!-- preloader script -->
+    <script>
     $(window).on("load", function() {
-      console.log("Window loaded!");
-      setTimeout(function() {
+        console.log("Window loaded!");
+        setTimeout(function() {
         $("#preloader").fadeOut("slow");
-      }, 2000);
+        }, 2000);
     });
-  </script>
-  
-</body>
+    </script>
 
+</body>
 <footer>
-  <h1>thank you for visiting</h1>
+    <hi>hi</hi>
 </footer>
 
-
 </html>
-
-

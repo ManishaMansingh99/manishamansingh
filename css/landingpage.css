@@ -1,0 +1,46 @@
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: 2;
+  }
+.main{
+    padding: 200px 50px;
+    position: absolute;
+    top:0;
+    left: 0;
+    text-align: left; 
+    z-index: 3; 
+    color: rgb(238,102,170);
+}
+.main h2{
+    font-weight: bolder;
+    position: relative;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    margin: 0;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    user-select: none;
+}

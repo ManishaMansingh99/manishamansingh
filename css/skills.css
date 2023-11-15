@@ -1,0 +1,96 @@
+.skills-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1rem 5rem;
+list-style: none;
+padding: 0;
+align-items: center;
+justify-content: center;
+max-width: 100%;
+margin: 0;
+}
+
+
+.skill{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 160px;
+height: 160px;
+background-color: #b37f7f00;
+position: relative;
+}
+
+
+
+.outer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  width: 160px;
+  padding: 2px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 15), -6px -6px 10px -1px rgba(255, 255, 255, 0.505);
+  border-radius: 50%;
+}
+
+.inner{
+height: 120px;
+width: 120px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7), -0.5px -.5px 0px rgba(255, 255, 255, 0.08), 0.5px 0.5px 0px rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05);
+border-radius: 50%;
+}
+
+#number{
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 600;
+color: #555;
+}
+
+.icon1 circle, .icon2 circle, .icon3 circle, .icon4 circle, .icon5 circle, .icon6 circle {
+fill: none;
+stroke: url(#GradientColor);
+stroke-width: 11.9px;
+stroke-dasharray: 276.32; 
+stroke-dashoffset:276.32; 
+transition: stroke-dashoffset 0.5s ease-out;
+}
+
+.skill:hover .icon1 circle  {
+stroke-dashoffset: 69.115; 
+}
+.skill:hover .icon2 circle{
+stroke-dashoffset: 19.115;
+}
+.skill:hover .icon3 circle  {
+stroke-dashoffset: 69.115; 
+}
+.skill:hover .icon4 circle{
+stroke-dashoffset: 19.115;
+}
+.skill:hover .icon5 circle  {
+stroke-dashoffset: 69.115; 
+}
+.skill:hover .icon6 circle{
+stroke-dashoffset: 19.115;
+}
+
+
+.skill svg{
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+.skill img{
+height: 60px;
+width: 60px;
+filter: brightness(50%);
+}
+.skill:hover img{
+  filter: brightness(100%);
+}
