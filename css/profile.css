@@ -55,11 +55,19 @@
   }
   .flex-child {
     flex: 1;
-  }  
+  } 
+
+#canvas3d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 5rem;
+}
   .flex-child.data{
     min-width: 62%;
     min-height: 100vh; 
-    margin-right: 20px; 
+    margin-right: 2%; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -92,7 +100,7 @@
 }
 .flex-child.data h3{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     color: rgb(255, 255, 255);
 }
