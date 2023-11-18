@@ -13,61 +13,170 @@
 <body>
 
 <body>
-	<section class="fade-in" id="project">
-		<h1 class="fade-in">Projects</h1>
-		<div class="card">
-			<div class="project-card-sm">
-				<div class="card-border-gradient"></div>
-				<img src="images/mcd.jpg">
-			</div>
-			<div class="text-card">
-			<h2>MCD RFM</h2>
-			<div class="text-card data">
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil eius ullam totam quasi eaque voluptatum modi dolore. Molestiae voluptatibus aspernatur maxime fugit, quia sed ex nobis quibusdam veniam quam.</p>
-			</div>
-			<li>java spring python</li>
-		</div>
-		</div>
-		<div class="card">
-			<div class="project-card-sm">
-				<div class="card-border-gradient"></div>
-				<img src="images/mcd.jpg">
-			</div>
-			<div class="text-card">
-			<h2>MCD RFM</h2>
-			<div class="text-card data">
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil eius ullam totam quasi eaque voluptatum modi dolore. Molestiae voluptatibus aspernatur maxime fugit, quia sed ex nobis quibusdam veniam quam.</p>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil eius ullam totam quasi eaque voluptatum modi dolore. Molestiae voluptatibus aspernatur maxime fugit, quia sed ex nobis quibusdam veniam quam.</p>
-			</div>
-			<li>java spring python</li>
-		</div>
-		</div>
+
+	<div class="spacer"></div>
+
+	<section class="fade-in" id="work">
+		<link rel="stylesheet" href="css/work.css">
+		<div class="work-container">
+		<h1>Work Experience</h1>
+		<div id="cd-timeline" class="cd-container">
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-picture">
+					<img src="images/briefcase-svgrepo-com.svg" alt="Picture">
+				</div>
+	
+				<div class="cd-timeline-content">
+					<h2>Anicca Data</h2>
+					<h3>Internship</h3>
+					<p>rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+					<span class="cd-date">Jan 3,2022</span>
+				</div> 
+			</div> 
+	
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-movie">
+					<img src="images/document-svgrepo-com.svg" alt="Movie">
+				</div> 
+	
+				<div class="cd-timeline-content1">
+					<h2>Backend dev</h2>
+					<h3>Anicca data</h3>
+					<p>rum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+					<span class="cd-date">march 1,2022</span>
+				</div> 
+			</div> 
+	
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-picture">
+					<img src="images/monitor-svgrepo-com.svg" alt="Picture">
+				</div> 
+	
+				<div class="cd-timeline-content">
+					<h2>Backend dev</h2>
+					<h3>Anicca</h3>
+					<p>ossimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+					<span class="cd-date">feb 1,2023</span>
+				</div> 
+			</div> 
+		</div> 
+	</div>
+	   
 	</section>
-	<!-- <section class="fade-in" id="project">
-		<h1 class="fade-in">Projects</h1>
-		<link rel ="stylesheet" href="css/project.css">
-		<div class="project-card-sm">
-			<div class="card-border-gradient"></div>
-			<div class="card-container">
-			<img src="images/mcd.jpg" alt="">
-			<div class="wrapper">
-				<h2>RFM MCD</h2>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam </p>
-				<li>Java SpringBoot Docker PostgreSQL Swagger</li>
-			</div>
-			</div>
-		</div>
-		<div class="project-card-sm">
-			<div class="card-border-gradient"></div>
-			<div class="card-container">
-			<img src="images/dmf.jpg" alt="">
-			<div class="wrapper">
-				<h2>Inventory Planner</h2>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam </p>
-				<li>Java SpringBoot Docker PostgreSQL Swagger</li>
-			</div>
-			</div>
-		</div>
-		</section> -->
+
+	<div class="spacer"></div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/studio-freight/leni@1/bundled/lenis.min.js"></script>
+
+	<script>
+		// GSAP with ScrollTrigger for .cd-timeline-content
+		gsap.registerPlugin(ScrollTrigger);
+		
+		// Select all the .cd-timeline-content elements
+		gsap.utils.toArray('.cd-timeline-content').forEach(block => {
+		  let tl = gsap.timeline({
+			scrollTrigger: {
+			  trigger: block,
+			  start: 'top center', 
+			  end: 'bottom center', 
+			  scrub: true,
+			  markers: true 
+			}
+		  });
+		
+		  // Define the animation for the block
+		  tl.from(block, {
+			x: -10, 
+			autoAlpha: 0, 
+			duration: 1
+		  });
+		});
+
+		// Select all the .cd-timeline-content elements
+		gsap.utils.toArray('.cd-timeline-content1').forEach(block => {
+		  let tl = gsap.timeline({
+			scrollTrigger: {
+			  trigger: block,
+			  start: 'top center', 
+			  end: 'bottom center', 
+			  scrub: true,
+			  markers: true 
+			}
+		  });
+		
+		  // Define the animation for the block
+		  tl.from(block, {
+			x: 100, 
+			autoAlpha: 0, 
+			duration: 1
+		  });
+		});
+		
+
+		// ... rest of your existing JavaScript code ...
+		const lenis = new Lenis()
+
+		lenis.on('scroll', (e) => {
+		console.log(e)
+		})
+
+		function raf(time) {
+		lenis.raf(time)
+		requestAnimationFrame(raf)
+		}
+
+		requestAnimationFrame(raf)
+		</script>
+		
+
+<!-- 
+	<div class="spacer"></div>
+<div class="card">
+  <div class="animated-element">
+    <h2>Animate me</h2>
+    <p>This is a simple card with a title and a description. It will animate as we scroll.</p>
+  </div>
+</div>
+<div class="spacer"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/leni@1/bundled/lenis.min.js"></script>
+
+<script>
+
+	let tl = gsap.timeline({
+		scrollTrigger: {
+			trigger: '.animated-element',
+			start: '35% 80%',
+			end: 'bottom 20%',
+			scrub: true,
+			markers: true
+		}
+	})
+
+	tl.to('.animated-element',{
+		x:800
+	})
+
+
+
+	const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+</script> -->
 </body>
 </html>

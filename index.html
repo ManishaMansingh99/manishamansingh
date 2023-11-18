@@ -76,9 +76,9 @@
             <li><a onclick="window.location.href='#contact'">Contact</a></li>
             <span class="toggleMenu"></span>
         </ul>
-
-        <a href="images/Manisha_Mansingh_Resume.pdf" class="download-button" download="Manisha_Mansingh_Resume.pdf">Download Resume</a>
-
+        <div class="download-button">
+        <a href="images/Manisha_Mansingh_Resume.pdf" class="custom-btn btn-8" download="Manisha_Mansingh_Resume.pdf"><span>Resume</span> </a>
+        </div>
     </nav>
 
     <section class="landingpage" id="home">
@@ -151,7 +151,7 @@
               </div>
         </section>
     <!-- work -->
-        <section class="fade-in" id="work">
+        <!-- <section class="fade-in" id="work">
             <link rel="stylesheet" href="css/work.css">
             <div class="work-container">
             <h1>Work Experience</h1>
@@ -197,195 +197,248 @@
             </div> 
         </div>
            
+        </section> -->
+    
+    	<section class="fade-in" id="work">
+            <link rel="stylesheet" href="css/work.css">
+            <div class="work-container">
+            <h1>Work Experience</h1>
+            <div id="cd-timeline" class="cd-container">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                        <img src="images/briefcase-svgrepo-com.svg" alt="Picture">
+                    </div>
+        
+                    <div class="cd-timeline-content">
+                        <h2>Anicca Data</h2>
+                        <h3>Internship</h3>
+                        <p>rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                        <span class="cd-date">Jan 3,2022</span>
+                    </div> 
+                </div> 
+        
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-movie">
+                        <img src="images/document-svgrepo-com.svg" alt="Movie">
+                    </div> 
+        
+                    <div class="cd-timeline-content1">
+                        <h2>Backend dev</h2>
+                        <h3>Anicca data</h3>
+                        <p>rum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                        <span class="cd-date">march 1,2022</span>
+                    </div> 
+                </div> 
+        
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                        <img src="images/monitor-svgrepo-com.svg" alt="Picture">
+                    </div> 
+        
+                    <div class="cd-timeline-content2">
+                        <h2>Backend dev</h2>
+                        <h3>Anicca</h3>
+                        <p>ossimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+                        <span class="cd-date">feb 1,2023</span>
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+           
         </section>
-    <!-- project -->
-        <section class="fade-in" id="project">
-            <h1 class="fade-in">Projects</h1>
-            <link rel="stylesheet" href="css/project.css">
-            <div class="card">
-                <div class="project-card-sm">
-                    <div class="card-border-gradient"></div>
-                    <img src="images/mcd.jpg">
-                </div>
-                <div class="text-card">
-                <h2>MCD RFM</h2>
-                <div class="text-card data">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil eius ullam totam quasi eaque voluptatum modi dolore. Molestiae voluptatibus aspernatur maxime fugit, quia sed ex nobis quibusdam veniam quam.</p>
-                </div>
-                <li>java spring python</li>
-            </div>
-            </div>
-            <div class="card">
-                <div class="project-card-sm">
-                    <div class="card-border-gradient"></div>
-                    <img src="images/mcd.jpg">
-                </div>
-                <div class="text-card">
-                <h2>MCD RFM</h2>
-                <div class="text-card data">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil eius ullam totam quasi eaque voluptatum modi dolore. Molestiae voluptatibus aspernatur maxime fugit, quia sed ex nobis quibusdam veniam quam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil eius ullam totam quasi eaque voluptatum modi dolore. Molestiae voluptatibus aspernatur maxime fugit, quia sed ex nobis quibusdam veniam quam.</p>
-                </div>
-                <li>java spring python</li>
-            </div>
-            </div>
-        </section>
+    <!-- script for work animation -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/leni@1/bundled/lenis.min.js"></script>
+        <script src="js/work.js"></script>
+    
+        <!-- project -->
+	<section class="fade-in" id="project">
+		<h1 class="fade-in">Projects</h1>
+        <link rel="stylesheet" href="css/project.css">
+		<div class="card">
+			<div class="project-card-sm">
+				<div class="card-border-gradient"></div>
+				<img src="images/mcd.jpg">
+			</div>
+			<div class="text-card-left">
+			<h2>MCD RFM</h2>
+			<div class="text-card-left data">
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil eius ullam totam quasi eaque voluptatum modi dolore. Molestiae voluptatibus aspernatur maxime fugit, quia sed ex nobis quibusdam veniam quam.</p>
+			</div>
+			<li>java spring python</li>
+		</div>
+		</div>
+		<div class="card">
+			<div class="text-card-right">
+				<h2>MCD RFM</h2>
+				<div class="text-card-right data">
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil eius ullam totam quasi eaque voluptatum modi dolore. Molestiae voluptatibus aspernatur maxime fugit, quia sed ex nobis quibusdam veniam quam.</p>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil eius ullam totam quasi eaque voluptatum modi dolore. Molestiae voluptatibus aspernatur maxime fugit, quia sed ex nobis quibusdam veniam quam.</p>
+				</div>
+				<li>java spring python</li>
+			</div>
+			<div class="project-card-sm">
+				<div class="card-border-gradient"></div>
+				<img src="images/mcd.jpg">
+			</div>
+
+		</div>
+	</section>
     <!-- skills -->
-        <section class="fade-in" id="skills">
-            <h1>Skills</h1>
-            <link rel="stylesheet" href="css/skills.css">
-            <div class="skills-container">
-                <div class="skill">
+    <section class="fade-in" id="skills">
+        <h1>Skills</h1>
+        <link rel="stylesheet" href="css/skills.css">
+        <div class="skills-container">
+            <div class="skill">
+            <div class="outer">
+                <div class="inner">
+                    <div id="number" title="java">
+                        <img src="images/icons8-java-500.png">
+                    </div>
+                </div>
+            </div>
+    
+            <svg class="icon1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#ee66aa"/>
+                        <stop offset="100%" stop-color="#a39cf4"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
+            </svg>
+            </div>
+    
+            <div class="skill">
                 <div class="outer">
                     <div class="inner">
-                        <div id="number" title="java">
-                            <img src="images/icons8-java-500.png">
+                        <div id="number" title="SpringBoot">
+                            <img src="images/icons8-spring-boot-480 (1).png" style="background-color: aliceblue; border-radius: 50%;">
                         </div>
                     </div>
                 </div>
         
-                <svg class="icon1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                <svg class="icon2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
                     <defs>
                         <linearGradient id="GradientColor">
-                            <stop offset="0%" stop-color="#ee66aa"/>
-                            <stop offset="100%" stop-color="#a39cf4"/>
+                            <stop offset="0%" stop-color="#DA22FF"/>
+                            <stop offset="100%" stop-color="#9733EE"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="44" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number" title="sql">
+                            <img src="images/icons8-sql-100.png">
+                        </div>
+                    </div>
+                </div>
+        
+                <svg class="icon3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#DA22FF"/>
+                            <stop offset="100%" stop-color="#9733EE"/>
                         </linearGradient>
                     </defs>
                     <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
                 </svg>
+            </div>
+
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number" title="python">
+                            <img src="images/icons8-python-500.png">
+                        </div>
+                    </div>
                 </div>
         
-                <div class="skill">
-                    <div class="outer">
-                        <div class="inner">
-                            <div id="number" title="SpringBoot">
-                                <img src="images/icons8-spring-boot-480 (1).png" style="background-color: aliceblue; border-radius: 50%;">
-                            </div>
-                        </div>
-                    </div>
-            
-                    <svg class="icon2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
-                        <defs>
-                            <linearGradient id="GradientColor">
-                                <stop offset="0%" stop-color="#DA22FF"/>
-                                <stop offset="100%" stop-color="#9733EE"/>
-                            </linearGradient>
-                        </defs>
-                        <circle cx="50" cy="50" r="44" stroke-linecap="round"/>
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <div class="outer">
-                        <div class="inner">
-                            <div id="number" title="sql">
-                                <img src="images/icons8-sql-100.png">
-                            </div>
-                        </div>
-                    </div>
-            
-                    <svg class="icon3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
-                        <defs>
-                            <linearGradient id="GradientColor">
-                                <stop offset="0%" stop-color="#DA22FF"/>
-                                <stop offset="100%" stop-color="#9733EE"/>
-                            </linearGradient>
-                        </defs>
-                        <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <div class="outer">
-                        <div class="inner">
-                            <div id="number" title="python">
-                                <img src="images/icons8-python-500.png">
-                            </div>
-                        </div>
-                    </div>
-            
-                    <svg class="icon4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
-                        <defs>
-                            <linearGradient id="GradientColor">
-                                <stop offset="0%" stop-color="#DA22FF"/>
-                                <stop offset="100%" stop-color="#9733EE"/>
-                            </linearGradient>
-                        </defs>
-                        <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <div class="outer">
-                        <div class="inner">
-                            <div id="number" title="html">
-                                <img src="images/icons8-html-100.png">
-                            </div>
-                        </div>
-                    </div>
-            
-                    <svg class="icon5" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
-                        <defs>
-                            <linearGradient id="GradientColor">
-                                <stop offset="0%" stop-color="#DA22FF"/>
-                                <stop offset="100%" stop-color="#9733EE"/>
-                            </linearGradient>
-                        </defs>
-                        <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <div class="outer">
-                        <div class="inner">
-                            <div id="number" title="docker">
-                                <img src="images/icons8-docker-500.png">
-                            </div>
-                        </div>
-                    </div>
-            
-                    <svg class="icon6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
-                        <defs>
-                            <linearGradient id="GradientColor">
-                                <stop offset="0%" stop-color="#DA22FF"/>
-                                <stop offset="100%" stop-color="#9733EE"/>
-                            </linearGradient>
-                        </defs>
-                        <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
-                    </svg>
-                </div>
+                <svg class="icon4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#DA22FF"/>
+                            <stop offset="100%" stop-color="#9733EE"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
+                </svg>
             </div>
 
-        </section>
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number" title="html">
+                            <img src="images/icons8-html-100.png">
+                        </div>
+                    </div>
+                </div>
+        
+                <svg class="icon5" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#DA22FF"/>
+                            <stop offset="100%" stop-color="#9733EE"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
+                </svg>
+            </div>
+
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number" title="docker">
+                            <img src="images/icons8-docker-500.png">
+                        </div>
+                    </div>
+                </div>
+        
+                <svg class="icon6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#DA22FF"/>
+                            <stop offset="100%" stop-color="#9733EE"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="44" stroke-linecap="round" data-percentage="55"/>
+                </svg>
+            </div>
+        </div>
+
+    </section>
     <!-- contact -->
-          <section class="fade-in" id="contact">
-            <div class="contact-container">
-              <h1 class="fade-in">Contact</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam delectus, amet illo dicta corrupti consequatur doloribus deleniti quam earum numquam mollitia ad praesentium rem, nihil commodi, neque odit quod eveniet.</p>
-              <ul class="soc">
-                  <a class="logo-1 inkedin" title="linkedin">
-                    <div class="ir">
-                      <img src="images/icons8-linked-in-500.png">
-                    </div>
-                  </a>
-                
-                <a class="logo-7 git" title="git">
-                    <div class="ir">
-                        <img src="images/icons8-github-480 (1).png">
-                    </div>
-                </a>
-                <a class="logo-3 mail" title="mail">
-                    <div class="ir">
-                        <img src="images/icons8-mail-100.png">
-                    </div>
-                </a>
-            </ul>
-            </div>
-          </section>
+    <section class="fade-in" id="contact">
+        <div class="contact-container">
+        <h1 class="fade-in">Contact</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam delectus, amet illo dicta corrupti consequatur doloribus deleniti quam earum numquam mollitia ad praesentium rem, nihil commodi, neque odit quod eveniet.</p>
+        <ul class="soc">
+            <a class="logo-1 inkedin" title="linkedin">
+                <div class="ir">
+                <img src="images/icons8-linked-in-500.png">
+                </div>
+            </a>
+            
+            <a class="logo-7 git" title="git">
+                <div class="ir">
+                    <img src="images/icons8-github-480 (1).png">
+                </div>
+            </a>
+            <a class="logo-3 mail" title="mail">
+                <div class="ir">
+                    <img src="images/icons8-mail-100.png">
+                </div>
+            </a>
+        </ul>
+        </div>
+    </section>
     </div>
-    <script src="js/work.js"></script>
-
-    <script src="js/skills.js"></script>
+    
 
     <!-- nav toggle script -->
     <script>
