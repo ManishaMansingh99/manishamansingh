@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 // GSAP with ScrollTrigger for .cd-timeline-content
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,7 +74,7 @@ requestAnimationFrame(raf)
 
 requestAnimationFrame(raf)
 
-
+})
 
 
 
