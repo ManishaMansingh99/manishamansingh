@@ -97,7 +97,7 @@ width: auto;
 .text-card-left h2{
   margin-top: auto; 
   text-align: end;
-  font-size: 3rem;
+  font-size: 2rem;
   word-spacing: 20px;
   color: white;
 }
@@ -127,7 +127,7 @@ width: auto;
 .text-card-right h2{
   margin-top: auto; 
   text-align: start;
-  font-size: 3rem;
+  font-size: 2rem;
   word-spacing: 20px;
   color: white;
 }

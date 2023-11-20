@@ -12,7 +12,7 @@ img {
 
 .cd-container {
   width: 90%;
-  max-width: 1170px;
+  min-width: 900px;
   margin: 0 auto;
 }
 

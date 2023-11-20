@@ -62,22 +62,22 @@ transition: stroke-dashoffset 0.5s ease-out;
 }
 
 .skill:hover .icon1 circle  {
-stroke-dashoffset: 69.115; 
+stroke-dashoffset: 69.8; 
 }
 .skill:hover .icon2 circle{
-stroke-dashoffset: 19.115;
+stroke-dashoffset: 82.89;
 }
 .skill:hover .icon3 circle  {
-stroke-dashoffset: 69.115; 
+stroke-dashoffset: 55.264; 
 }
 .skill:hover .icon4 circle{
-stroke-dashoffset: 19.115;
+stroke-dashoffset: 90;
 }
 .skill:hover .icon5 circle  {
-stroke-dashoffset: 69.115; 
+stroke-dashoffset: 98; 
 }
 .skill:hover .icon6 circle{
-stroke-dashoffset: 19.115;
+stroke-dashoffset: 82.89;
 }
 
 
