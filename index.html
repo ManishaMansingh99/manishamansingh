@@ -137,11 +137,16 @@
                 <div class="flex-child data">
                     <div class="left-section">
 
-                        <h2>I am Manisha Mansingh. A software developer<br><br></h2>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae culpa eligendi cupiditate animi provident dolores facilis suscipit excepturi mollitia sequi voluptate illo, eveniet sit exercitationem doloremque veritatis quae? Repellat?</h3>
+                        <h2>I'm Manisha Mansingh, a software developer based in Bangalore, India. My journey into the tech world began uniquely—<br><br></h2>
+                        <h3>
+                            Graduating as an Electronics Engineer from IIIT Bhubaneswar in 2022, I found my passion in coding, influenced by my love for painting and DIY crafts. These creative pursuits led me to the dynamic world of software development, where creating and learning something new each day excites me. <br>
+
+                            <br>As a backend developer for two years, I've delved into new technologies, enjoying the practical side of real-time applications. My dedication to growth is reflected in my continuous learning and personal projects, with this website showcasing my development skills.<br> 
+                            
+                            <br>Beyond work, I express my appreciation for life's beauty through drawing, inspired by natural landscapes. My unique blend of technology and creativity fuels my enthusiasm for tackling new challenges in the evolving tech world.</h3>
                     </div>
                     <div class="profile-contain">
-                        <h1>HI, WELCOME</h1>
+                        <h1>Hello, </h1>
                     </div>
 
                 </div>
@@ -161,7 +166,7 @@
                     <div class="cd-timeline-content">
                         <h2>Backend Developer, Inventory Planner Project</h2>
                         <h3>Anicca Data Sc. Solution PVT. ltd.</h3>
-                        <p>Developed the Demand forecasting software for TriMark</p>
+                        <p>Developed a Demand forecasting software for TriMark</p>
                         <span class="cd-date">Feb,2023</span>
                     </div> 
                 </div> 
@@ -174,7 +179,7 @@
                     <div class="cd-timeline-content1">
                         <h2>Backend Developer, McDonald's RFM Project</h2>
                         <h3>Anicca Data Sc. Solution PVT. ltd.</h3>
-                        <p>Part of McDonald's Digital transformation</p>
+                        <p>Part of McDonald's digital transformation. We upgraded their existing UI and database, integrating the latest technological advancements.</p>
                         <span class="cd-date">March,2022</span>
                     </div> 
                 </div> 
@@ -187,7 +192,8 @@
                     <div class="cd-timeline-content2">
                         <h2>Intern, McDonald's Computer Vision Projectv</h2>
                         <h3>Anicca Data Sc. Solution PVT. ltd.</h3>
-                        <p>Read the cctv footage to generate data</p>
+                        <p>
+                            Analyzed McDonald's CCTV data with CVAT for serving time and rush hour insights.</p>
                         <span class="cd-date"> Jan,2022</span>
                     </div> 
                 </div> 
@@ -195,36 +201,47 @@
         </div>
            
     </div>
-    
-        <!-- project -->
+    <!-- project -->
 	<section class="fade-in" id="project">
 		<h1 class="fade-project">Projects</h1>
         <link rel="stylesheet" href="css/project.css">
 		<div class="card">
-			<div class="project-card-sm">
+			<div class="project-card-sm left">
 				<div class="card-border-gradient"></div>
 				<img src="images/mcd.jpg">
 			</div>
 			<div class="text-card-left">
 			<h2>McDonald's RFM</h2>
-			<div class="text-card-left data">
-				<p>In this project, we aimed to modernize McDonald's technology by transitioning from an Oracle to a PostgreSQL database using Liquibase. The setup involved Docker for PostgreSQL deployment, ensuring consistent and isolated environments. A Spring Boot scheduler was implemented for database synchronization, maintaining data integrity. We developed APIs with Java Gradle, focusing on seamless front-end integration and documented using Swagger. Code quality was upheld using Git for version control and SonarLint for ongoing analysis, contributing significantly to McDonald's digital transformation.</p>
-            </div>
-			<li>JavaGradle PostgreSQL Liquibase Spring-boot</li>
+                <div class="text-card-left data">
+                    <p>1. Upgraded McDonald's database from legacy Oracle to PostgreSQL using Liquibase.
+                        <br>2. Deployed local PostgreSQL using Docker for simplified setup and management.
+                        <br>3. Utilized containerization for PostgreSQL to ensure consistency and isolation.
+                        <br>4. Implemented a scheduler task in Spring Boot for database synchronization.
+                        <br>5. Developed APIs for UI tasks using Java Gradle, maintained with Swagger for front-end compatibility.
+                        <br>6. Managed version control by deploying code to Git.
+                        <br>7. Maintained code quality standards using SonarLint.
+                    </p>
+                </div>
+			<a>JavaGradle PostgreSQL Liquibase Spring-boot</a>
 		</div>
 		</div>
 		<div class="card">
 			<div class="text-card-right">
 				<h2>Inventory Planner</h2>
 				<div class="text-card-right data">
-					<p>Developed an inventory planner for TriMark, analyzing data across 12 ERPs for demand forecasting. Utilized Python to test ML models, achieving over 90% accuracy in 10-week sales predictions. Implemented Airflow DAGs for automation, deployed via Docker, and integrated with S3 for data management. Maintained code and documentation on GitHub, ensuring quality with SonarQube.
-                        </p>
+                    <p>1. Analyzed data from 12 ERPs, preparing it for demand forecasting.
+                        <br>2. Tested various ML models using Python, accurately predicting sales for 10 weeks.
+                        <br>3. Implemented Airflow DAGs for automating data preprocessing and ML tasks.
+                        <br>4. Orchestrated model scheduling and execution, deploying Airflow locally via Docker.
+                        <br>5. Established a connection between Airflow and an S3 bucket for data management.
+                        <br>6. Maintained a GitHub repository for version control and DAGs documentation.
+                        <br>7. Ensured code quality standards using SonarQube.</p>
 				</div>
-				<li>Python SonarLint Docker Airflow S3bucket</li>
+				<a>Python SonarLint Docker Airflow S3bucket</a>
 			</div>
-			<div class="project-card-sm">
+			<div class="project-card-sm right">
 				<div class="card-border-gradient"></div>
-				<img src="images/mcd.jpg">
+				<img src="images/dmf.jpg">
 			</div>
 
 		</div>
@@ -357,10 +374,11 @@
 
     </section>
     <!-- contact -->
-    <section class="fade-in" id="contact">
+    <section id="contact">
         <div class="contact-container">
-        <h1 class="fade-in">Contact</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam delectus, amet illo dicta corrupti consequatur doloribus deleniti quam earum numquam mollitia ad praesentium rem, nihil commodi, neque odit quod eveniet.</p>
+        <h1>Contact</h1>
+        <p>I’m currently looking for any new opportunities and welcome any inquiries. 
+            Feel free to reach out to me for questions, introductions, or a simple hello—I'll make sure to respond promptly.</p>
         <ul class="soc">
             <a class="logo-1 inkedin" title="linkedin">
                 <div class="ir">
@@ -426,8 +444,8 @@
     <script src="js/work.js"></script>
 
 </body>
-<footer>
+<!-- <footer>
     <hi>hi</hi>
-</footer>
+</footer> -->
 
 </html>

@@ -52,12 +52,15 @@
 }
 .flex-child.data h2{
     color: rgb(255, 255, 255);
+    font-size: 1.2rem;
 }
 .flex-child.data h3{
     display: flex;
     justify-content: start;
     align-items: center;
     color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    text-align: left;
 }
 .flex-child.data h1 {
     font-size: 4rem;
