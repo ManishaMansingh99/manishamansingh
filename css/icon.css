@@ -1,9 +1,0 @@
-.gif-container {
-    position: relative;
-    display: inline-block;
-}
-
-#hoverGif {
-    width: 200px; /* Set your preferred width */
-    height: auto; /* Maintain aspect ratio */
-}

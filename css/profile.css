@@ -6,47 +6,41 @@
     position: relative; 
     overflow: hidden;
     width: 100%;
+    flex-direction: row;
   }
   .flex-child {
     flex: 1;
   } 
-
-#canvas3d{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    margin-left: 5rem;
+.flex-child.image{
+max-width: 35%;
+display: flex;
+align-items: center;
+justify-content: center;
+justify-items: center;
+/* margin-left: 5rem; */
+/* margin-right: 0; */
 }
-  .flex-child.data{
-    min-width: 65%;
-    min-height: 100vh; 
-    margin-right: 30px; 
+#canvas3d{
+    /* max-width: 100%;
+    min-height: 100vh; */
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-  }
-  /* .profile-contain {
-    flex: 1;
-    max-width: 450px;
-    max-height: 450px;
-    padding: 30px;
-    box-sizing: content-box;
-    border-radius: 20% 20% 20% 20%;
-    position: relative;
-    background-color: #0000005f;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; 
-    align-items: flex-end;
-    filter: brightness(50%);
-} */
-/* .profile-contain h1{
-    font-size: 4rem;
-    color: rgb(163,156,244);
-} */
+    align-items: end;
+    justify-content: end;
+    justify-items: end;
+    margin-right: 0;
+    margin-left: 10rem;
+}
+.flex-child.data{
+max-width: 80%;
+min-height: 100vh; 
+margin-right: 3rem; 
+display: flex;
+flex-direction: row;
+justify-content: left;
+align-items: center;
+text-align: center;
+}
+
 .data-content{
     flex: 1;
 }
@@ -65,43 +59,83 @@
 .flex-child.data h1 {
     font-size: 4rem;
     color: rgb(163, 156, 244);
-    /* transform: rotate(90deg); */
-    /* width: 500px; */
     transform-origin: right bottom;
     margin-bottom: 0;
     margin-right: 0; /* Push the text to the right */
     text-shadow: 0 0 30px -15px rgb(238,102,170);
 }
-.flex-child.data img {
-    width: 100px;
-    height: 50;
-    color: rgb(163, 156, 244);
-    /* transform: rotate(90deg); */
-    transform-origin: right bottom;
-    margin-bottom: 0;
-    text-shadow: 0 0 30px -15px rgb(238,102,170);
-}
+
 .profile-contain {
     font-size: 0.5rem;
     color: rgb(163, 156, 244);
-    transform: rotate(90deg);
-    /* transform-origin: right bottom; */
+    transform: rotate(-90deg);
     margin-top: 0;
     margin-left: 0;
 }
 
-/* .profile-contain h2{
-    font-size: 1.1rem;
-    color: rgb(163,156,244);
-}
-.profile-contain h3{
-    font-size: 0.8rem;
-    color: #ffffff;
-}
 
-.profile-contain:hover{
-    box-shadow: 
-    0 0 30px -15px rgb(238,102,170) ,
-    0 0 70px -20px rgb(163,156,244);
-    filter: brightness(100%);
-} */
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .flex-container {
+      flex-direction: column; 
+      display: flex;
+      position: relative; 
+      overflow: hidden;
+      width: 100%;
+    }
+    .flex-child {
+        flex: 1;
+        max-width: 100%;
+      } 
+      .flex-child.image{
+        opacity: 0; 
+        height: 844px;
+        }
+        #canvas3d{
+            height: 844px;
+            position: absolute;
+        }
+        
+    .flex-child.data {
+      min-width: 100%; /* Full width on small screens */
+      min-height: auto; /* Adjust height */
+      margin-right: 0; /* Remove extra margin */
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center-align items */
+      text-align: center; /* Center text */
+      display: flex;
+    }
+      .flex-child.data h1 {
+        font-size: 2rem; /* Adjust font size */
+        text-align: center; /* Center text */
+      }
+  
+      .flex-child.data h2 {
+       
+        font-size: 0.8rem; /* Adjust font size */
+        text-align: center; /* Center text */
+      }
+  
+      .flex-child.data h3 {
+      
+        font-size: 0.8rem; /* Adjust font size */
+        text-align: center; /* Center text */
+      }
+
+
+    .profile-contain {
+      transform: none; /* Remove rotation */
+      margin-top: 10px; /* Adjust margin */
+      order: 1; /* Move h1 to the top */
+    }
+.left-section{
+    order: 2;
+}
+    /* Additional mobile-specific adjustments */
+}

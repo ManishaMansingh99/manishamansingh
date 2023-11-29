@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/style.js"></script>
 </head>  
 
 <body>
@@ -61,7 +60,7 @@
         </svg>
     </div>
 
-    <!-- navigation bar -->
+    <!-- navigation bar for pc -->
     <nav id="navbar">
         <link rel="stylesheet" href="css/nav.css">
         <a class="brand">
@@ -74,13 +73,14 @@
             <li><a onclick="window.location.href='#project'">Projects</a></li>
             <li><a onclick="window.location.href='#skills'">Skills</a></li>
             <li><a onclick="window.location.href='#contact'">Contact</a></li>
-            <span class="toggleMenu"></span>
+            <span class="toggleMenu" onclick="toggleMenu()"></span>
         </ul>
         <div class="download-button">
         <a href="images/Manisha_Mansingh_Resume.pdf" class="custom-btn btn-8" download="Manisha_Mansingh_Resume.pdf"><span>Resume</span> </a>
         </div>
     </nav>
 
+<!-- landing page -->
     <section class="landingpage" id="home">
         <link rel="stylesheet" href="css/landingpage.css">
         <div class="main">
@@ -118,40 +118,42 @@
 
     <div class="overflow">
     <!-- profile -->
-        <section class="fade-in" id="profile">
-            <link rel="stylesheet" href="css/profile.css">
-            <div class="flex-container">
+    <section class="fade-in" id="profile">
+        <link rel="stylesheet" href="css/profile.css">
+        <div class="flex-container">
 
-                <div class="flex-child image">
-                  <canvas id="canvas3d"></canvas>
-                  <script type="module">
-                    import { Application } from './spline/phone/runtime.js';
-                    const canvas = document.getElementById('canvas3d');
-                    const app = new Application(canvas);
-                    app.load('./spline/phone/scene.splinecode');
-                  </script>
+            <div class="flex-child image">
+                <canvas id="canvas3d"></canvas>
+                <script type="module">
+                import { Application } from './spline/phone/runtime.js';
+                const canvas = document.getElementById('canvas3d');
+                const app = new Application(canvas);
+                app.load('./spline/phone/scene.splinecode');
+                </script>
 
-                  <!-- <iframe src='https://my.spline.design/untitled-beb83f99d4458c7daafbf46458c60d6a/' frameborder='0' width='100%' height='100%'></iframe> -->
+                <!-- <iframe src='https://my.spline.design/untitled-beb83f99d4458c7daafbf46458c60d6a/' frameborder='0' width='100%' height='100%'></iframe> -->
+            </div>
+        
+            <div class="flex-child data">
+                <div class="profile-contain">
+                    <h1>Hello, </h1>
                 </div>
-          
-                <div class="flex-child data">
-                    <div class="left-section">
+                <div class="left-section">
 
-                        <h2>I'm Manisha Mansingh, a software developer based in Bangalore, India. My journey into the tech world began uniquely—<br><br></h2>
-                        <h3>
-                            Graduating as an Electronics Engineer from IIIT Bhubaneswar in 2022, I found my passion in coding, influenced by my love for painting and DIY crafts. These creative pursuits led me to the dynamic world of software development, where creating and learning something new each day excites me. <br>
+                    <h2>I'm Manisha Mansingh, a software developer based in Bangalore, India. My journey into the tech world began uniquely—<br><br></h2>
+                    <h3>
+                        Graduating as an Electronics Engineer from IIIT Bhubaneswar in 2022, I found my passion in coding, influenced by my love for painting and DIY crafts. These creative pursuits led me to the dynamic world of software development, where creating and learning something new each day excites me. <br>
 
-                            <br>As a backend developer for two years, I've delved into new technologies, enjoying the practical side of real-time applications. My dedication to growth is reflected in my continuous learning and personal projects, with this website showcasing my development skills.<br> 
-                            
-                            <br>Beyond work, I express my appreciation for life's beauty through drawing, inspired by natural landscapes. My unique blend of technology and creativity fuels my enthusiasm for tackling new challenges in the evolving tech world.</h3>
-                    </div>
-                    <div class="profile-contain">
-                        <h1>Hello, </h1>
-                    </div>
-
+                        <br>As a backend developer for two years, I've delved into new technologies, enjoying the practical side of real-time applications. My dedication to growth is reflected in my continuous learning and personal projects, with this website showcasing my development skills.<br> 
+                        
+                        <br>Beyond work, I express my appreciation for life's beauty through drawing, inspired by natural landscapes. My unique blend of technology and creativity fuels my enthusiasm for tackling new challenges in the evolving tech world.</h3>
                 </div>
-                
-        </section>
+
+
+            </div>
+            
+    </section>
+
     <!-- work -->
 	<div class="fade-in" id="work">
             <link rel="stylesheet" href="css/work.css">
@@ -201,6 +203,7 @@
         </div>
            
     </div>
+
     <!-- project -->
 	<section class="fade-in" id="project">
 		<h1 class="fade-project">Projects</h1>
@@ -246,6 +249,7 @@
 
 		</div>
 	</section>
+
     <!-- skills -->
     <section class="fade-in" id="skills">
         <h1>Skills</h1>
@@ -373,6 +377,7 @@
         </div>
 
     </section>
+
     <!-- contact -->
     <section id="contact">
         <div class="contact-container">
@@ -428,7 +433,7 @@
     </script>
 
     
-<!-- preloader script -->
+    <!-- preloader script -->
     <script>
     $(window).on("load", function() {
         console.log("Window loaded!");
@@ -441,7 +446,6 @@
     <!-- script for work animation -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/leni@1/bundled/lenis.min.js"></script> -->
     <script src="js/work.js"></script>
 
 </body>

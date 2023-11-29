@@ -445,3 +445,146 @@ img {
     animation: cd-bounce-2 0.6s;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .work-container {
+      flex-direction: column;
+      margin-right: 0;
+  }
+
+  .cd-container {
+      width: 100%;
+      min-width: 0; /* Remove minimum width */
+      margin-left: 2rem;
+  }
+
+  #work h1 {
+      font-size: 30px; /* Smaller font size */
+      margin-top: 2rem;
+      margin-left: 1rem;
+      text-align: center;
+      transform: none;
+      width: 100%;
+  }
+
+  .cd-timeline-img {
+      width: 30px; /* Smaller size */
+      height: 30px;
+      left: -0.8rem;
+  }
+  .cd-timeline-img img {
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      margin-left: -15px;
+  }
+
+  .cd-timeline-content,
+  .cd-timeline-content1,
+  .cd-timeline-content2 {
+      width: 70%; /* Full width */
+      /* margin-left: 10px; */
+      margin-right: 0;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+  }
+  .cd-timeline-content::before,
+  .cd-timeline-content1::before,
+  .cd-timeline-content2::before {
+      left: -8px; /* Adjust arrow position */
+      border-right: 7px solid transparent; /* Hide right border */
+      border-left: 7px solid #ffffff; /* Show left border */
+  }
+
+  .cd-timeline-content .cd-date,
+  .cd-timeline-content1 .cd-date,
+  .cd-timeline-content2 .cd-date {
+    color: rgb(192, 103, 103);
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+  }
+
+  .cd-timeline-content .cd-date,
+  .cd-timeline-content2 .cd-date {
+    order: 2; /* Place the date after the content */
+    position: relative; /* Remove absolute positioning */
+    margin-top: 0.5rem; /* Add some margin at the top */
+    width: 100%;
+    text-align: left; /* Align text to the left */
+    padding: 0; /* Adjust padding if necessary */
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+  }
+
+  .cd-timeline-content h2,
+  .cd-timeline-content1 h2,
+  .cd-timeline-content2 h2,
+  .cd-timeline-content p,
+  .cd-timeline-content1 p,
+  .cd-timeline-content2 p {
+    order: 1; /* Content comes first */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .cd-timeline-content1 .cd-date {
+    position: relative; 
+    margin-top: 0.5rem; 
+    margin-left: 0; /* Resets any left margin */
+    width: 100%; /* Ensures it spans the full width of its container */
+    text-align: left; /* Aligns text to the left */
+    padding: 0; /* Resets padding */
+    color: rgb(0, 0, 0); /* Keeps your color styling */
+    font-size: 1rem; /* Adjusts font size */
+  }
+
+.cd-timeline-content1 .cd-date {
+    position: static;
+    width: auto;
+    left: auto;
+    right: auto;
+    text-align: left;
+    padding: 0.8em 0;
+    margin-top: 1em;
+    order: 2;
+}
+
+#cd-timeline::before {
+    left: 0;
+    margin-left: 0;
+}
+
+.cd-timeline-block {
+    margin: 2em 0;
+}
+}
+

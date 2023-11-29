@@ -141,6 +141,14 @@ div #work {
 }
 
 
+
+
+
+
+
+
+
+
 .soc {
   display: flex;
   font-size: 0;
@@ -188,6 +196,7 @@ margin-top: 5rem;
   top: 0;
   left: 0;
 }
+
 .contact-container p{
   text-align: center;
   color: white;
@@ -201,4 +210,89 @@ footer{
   height: 15px;
   font-size: 5px;
   margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add this at the bottom of your existing CSS */
+@media only screen and (max-width: 768px) { /* Adjusts styles for screens up to 768px wide */
+
+  #navbar {
+    display: flex;
+    height: fit-content;
+    top:10px;
+  }
+
+  #navbar .download-button{
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    font-size: small;
+    text-align: center;
+    align-items: center;
+    top:15px;
+    right: 15px;
+  }
+
+  section, section #profile, section #project, section #contact {
+    height: auto; /* Adjust height for mobile */
+    padding: 20px; /* Add some padding */
+    /* Adjust other styles if needed */
+  }
+
+  #skills h1, #project h1, .contact-container h1 {
+    margin-top: 0;
+    font-size: 40px; /* Smaller font size */
+  }
+section #skills{
+  margin: -2rem;
+  padding: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+#contact{
+display: flex;
+justify-items: start;
+align-items: start;
+justify-content: center;
+}
+  .contact-container p {
+    font-size: 14px; /* Smaller text size */
+    max-width: 80%; /* Wider paragraph for better readability */
+    text-align: center;
+  }
+
+  .soc {
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  .soc a {
+  height: 1rem;
+  width: 1rem;
+  margin-top: 5rem;
+  }
+  
+  .ir > *{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: -10px;
+  }
 }

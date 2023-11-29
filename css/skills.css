@@ -94,3 +94,91 @@ filter: brightness(50%);
 .skill:hover img{
   filter: brightness(100%);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  .skills-container {
+      gap: 3rem; /* Reduce gap size */
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .skill svg {
+    width: 100px; /* Smaller size for mobile */
+    height: 100px;
+}
+
+.skill svg circle {
+    r: 45; /* Smaller radius for the circle */
+    stroke-width: 8px; /* Adjust stroke width */
+}
+
+  .skill {
+      width: 100px; /* Reduce skill size for smaller screens */
+      height: 100px;
+  }
+
+  .outer {
+      height: 100px;
+      width: 100px;
+  }
+
+  .inner {
+      height: 80px;
+      width: 80px;
+  }
+
+  .skill img {
+      height: 40px; /* Adjust image size */
+      width: 40px;
+  }
+
+
+
+  .icon1 circle, .icon2 circle, .icon3 circle, .icon4 circle, .icon5 circle, .icon6 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    /* stroke-width: 19px; */
+    stroke-dasharray: 282.857; 
+    stroke-dashoffset:282.857; 
+    transition: stroke-dashoffset 0.5s ease-out;
+    }
+    
+    .skill:hover .icon1 circle  {
+    stroke-dashoffset: 69.8; 
+    }
+    .skill:hover .icon2 circle{
+    stroke-dashoffset: 82.89;
+    }
+    .skill:hover .icon3 circle  {
+    stroke-dashoffset: 55.264; 
+    }
+    .skill:hover .icon4 circle{
+    stroke-dashoffset: 90;
+    }
+    .skill:hover .icon5 circle  {
+    stroke-dashoffset: 98; 
+    }
+    .skill:hover .icon6 circle{
+    stroke-dashoffset: 82.89;
+    }
+}
+
+/* Optionally, you can add another media query for slightly larger screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  
+
+
+  
+}

@@ -167,3 +167,63 @@ width: auto;
   font-size: .7rem;
   word-spacing: 20px;
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .card {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Auto height for flexibility */
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .project-card-sm {
+    max-width: 100%; /* Full width on small screens */
+    height: auto; /* Auto height for flexibility */
+    padding: 10px; /* Reduced padding */
+    margin: 10px 0; /* Adjust margin for smaller screen */
+    order: 2;
+  }
+
+  .project-card-sm img {
+    width: 400px; /* Full width of its container */
+    height: 200px; /* Keep aspect ratio */
+  }
+
+  .text-card-left, .text-card-right {
+    flex-direction: column;
+    align-items: center; /* Center align for better readability */
+    order: 1;
+  }
+
+  .text-card-left .data, .text-card-right .data {
+    max-width: 100%; /* Full width on small screens */
+    padding: 20px; /* Adjust padding */
+    margin-left: 0; /* Remove negative margin */
+    margin-right: 0; /* Remove negative margin */
+    font-size: 0.9rem; /* Adjust font size for readability */
+    order: 2;
+  }
+
+  .text-card-left h2, .text-card-right h2 {
+    font-size: 1.5rem; /* Larger font size for headings */
+    text-align: center; /* Center align text */
+    order: 1;
+  }
+
+  .text-card-left a, .text-card-right a {
+    font-size: 0.8rem; /* Adjust font size for links */
+    text-align: center; /* Center align text */
+    order: 3;
+  }
+
+}
