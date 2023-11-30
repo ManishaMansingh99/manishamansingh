@@ -164,6 +164,7 @@ width: auto;
 .text-card-right a {
   list-style: none;
   margin-top: auto;
+  text-align: start;
   font-size: .7rem;
   word-spacing: 20px;
 }
